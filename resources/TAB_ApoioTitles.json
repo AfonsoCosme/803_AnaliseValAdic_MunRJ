@@ -1,0 +1,20 @@
+{
+    "monetary_keywords": [
+      "valor",
+      "contribuição",
+      "R$",
+      "reais",
+      "total",
+      "agregado",
+      "variação r$",
+      "desvio padrão",
+      "média",
+      "mediana"
+    ],
+    "percentage_keywords": [
+      "%",
+      "percentual",
+      "proporção",
+      "variação %"
+    ]
+  }
