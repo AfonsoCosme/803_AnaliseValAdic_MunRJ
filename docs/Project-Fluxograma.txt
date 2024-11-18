@@ -1,0 +1,36 @@
+TabulaValAdic_Project/
+
+1. Início (main.py)
+│
+2. Carregar configurações (Config.ini) (Controller.py: __init__)
+│
+3. Inicializar Controller, Model e View (main.py)
+│
+4. Loop: Para cada arquivo CSV na pasta de entrada (Controller.py: load_all_data)
+│   ├── 4.1. Ler arquivo CSV (Model.py: load_data)
+│   ├── 4.2. Processar dados do arquivo (Model.py: load_data)
+│   └── 4.3. Adicionar dados ao DataFrame principal (Model.py: load_data)
+│
+5. Remover duplicatas do DataFrame principal (Model.py: remove_duplicates)
+│
+6. Processar dados (Model.py: process_data)
+│   ├── 6.1. Criar DataFrame unificado (Model.py: process_data)
+│   ├── 6.2. Criar DataFrame pivotado (df_evol) (Model.py: process_data)
+│   └── 6.3. Loop: Para cada município (atualmente apenas Areal) (Model.py: calculate_variations)
+│       ├── 6.3.1. Filtrar dados do município (Model.py: calculate_variations)
+│       ├── 6.3.2. Loop: Para cada ano de 2018 a 2023 (Model.py: calculate_variations)
+│       │   ├── 6.3.2.1. Calcular variação percentual (Model.py: _calculate_percentage_change)
+│       │   └── 6.3.2.2. Adicionar coluna de variação (Model.py: calculate_variations)
+│       ├── 6.3.3. Organizar colunas na ordem correta (Model.py: calculate_variations)
+│       └── 6.3.4. Adicionar DataFrame do município ao dicionário de análise (Model.py: calculate_variations)
+│
+7. Atualizar arquivo Excel (View.py: update_excel)
+│   ├── 7.1. Atualizar aba TAB_Unificada (View.py: update_tab_unificada)
+│   └── 7.2. Loop: Para cada aba de análise (atualmente apenas AnaliseARE) (View.py: update_analysis_tabs)
+│       ├── 7.2.1. Limpar dados existentes (View.py: _clear_sheet_data)
+│       ├── 7.2.2. Inserir novos dados (View.py: _update_sheet)
+│       └── 7.2.3. Aplicar formatação condicional (View.py: _apply_conditional_formatting)
+│
+8. Salvar arquivo Excel (View.py: _save_workbook)
+│
+9. Fim (main.py)

@@ -1,0 +1,55 @@
+TabulaValAdic_Project/
+│
+├── src/
+│   ├── __init__.py
+│   ├── Constants.py
+│   ├── Controller.py
+│   ├── DataAnalyzer.py
+│   ├── Model.py
+│   ├── View.py
+│   └── utils/
+│       ├── __init__.py
+│       └── helpers.py
+│
+├── resources/
+│   ├── Config.ini
+│   └── Logo.jpg
+│
+├── data/
+│   ├── input/
+│   │   ├── ARE_VarAnual-2017a2019.csv
+│   │   ├── ARE_VarAnual-2018a2020.csv
+│   │   ├── ARE_VarAnual-2019a2021.csv
+│   │   ├── ARE_VarAnual-2020a2022.csv
+│   │   └── ARE_VarAnual-2021a2023.csv
+│   │   ├── POR_VarAnual-2017a2019.csv
+│   │   ├── POR_VarAnual-2018a2020.csv
+│   │   ├── POR_VarAnual-2019a2021.csv
+│   │   ├── POR_VarAnual-2020a2022.csv
+│   │   └── POR_VarAnual-2021a2023.csv
+│   └── output/
+│       └── Tabula_POR_2017a2023.xlsx
+│
+├── tests/
+│   └── __init__.py
+│
+├── docs/
+│   └── Project-Estrutura.txt
+│   └── Project-Fluxograma.txt
+│   └── README.md
+│
+├── logs/
+│   └── app.log
+│
+├── _Requirements.txt
+├── data_model.log
+├── data_analyzer.log
+├── file_version_info.txt
+└── Logger.py
+├── main.py
+├── runtime_hook.py
+├── setup.py
+├── TabulaValAdic.spec
+├── upx.conf
+├── version.py
+

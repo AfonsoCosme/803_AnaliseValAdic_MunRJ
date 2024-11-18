@@ -1,0 +1,65 @@
+Relatório Detalhado dos Cálculos para Análise de Contribuintes
+
+Seleção de Dados
+
+Período considerado: 2018 até o último ano disponível (atualmente 2023)
+Contribuintes considerados: Todos com valor acima da média do município
+Cálculo da Média do Município
+
+Fórmula: Soma de todos os valores de todos os contribuintes de 2018 a 2023 / (Número de contribuintes * Número de anos)
+Exemplo: Se a soma total for R$ 1.000.000.000, com 1000 contribuintes e 6 anos: Média = 1.000.000.000 / (1000 * 6) = R$ 166.666,67
+Variação Percentual Ano a Ano
+
+Fórmula: ((Valor Ano Atual - Valor Ano Anterior) / Valor Ano Anterior) * 100
+Exemplo: 2018: R$ 100.000 2019: R$ 120.000 Variação 2018-2019 = ((120.000 - 100.000) / 100.000) * 100 = 20%
+Variação Total (2018 - Último Ano)
+
+Fórmula: ((Valor Último Ano - Valor 2018) / Valor 2018) * 100
+Exemplo: 2018: R$ 100.000 2023: R$ 150.000 Variação Total = ((150.000 - 100.000) / 100.000) * 100 = 50%
+Índice de Volatilidade (Coeficiente de Variação)
+
+Passo 1: Calcular a média dos valores anuais
+Passo 2: Calcular o desvio padrão dos valores anuais
+Passo 3: CV = (Desvio Padrão / Média) * 100
+Exemplo: Valores: 100.000, 120.000, 110.000, 130.000, 125.000, 140.000 Média = 120.833,33 Desvio Padrão = 13.819,76 CV = (13.819,76 / 120.833,33) * 100 = 11,44%
+Classificação de Tendência
+
+Declínio: Variação Total < -20%
+Estável: -20% ≤ Variação Total ≤ 20%
+Crescimento: Variação Total > 20%
+Classificação por Volatilidade (usando quartis)
+
+Calcular CV para todos os contribuintes
+Ordenar CVs do menor para o maior
+Dividir em quatro grupos iguais: Baixa: 0 a 25% dos dados Média-Baixa: 25% a 50% dos dados Média-Alta: 50% a 75% dos dados Alta: 75% a 100% dos dados
+Análise de Concentração
+
+Somar o valor total de todos os contribuintes
+Calcular o percentual representado pelos top 10, 20 e 50 contribuintes
+Fórmula: (Soma dos valores dos top X contribuintes / Valor total) * 100
+Exemplo: Valor total do município: R$ 1.000.000.000 Soma dos top 10: R$ 300.000.000 Concentração top 10 = (300.000.000 / 1.000.000.000) * 100 = 30%
+Identificação de Contribuintes Sem Movimentação
+
+Critério: Valor zero em todos os anos analisados (2018-2023)
+Cálculo de Médias e Medianas
+
+Média das Variações Totais: Somar todas as variações totais e dividir pelo número de contribuintes
+Mediana das Variações Totais: Ordenar todas as variações totais e selecionar o valor central
+Identificação de Top Variações
+
+Top 5 Positivas: Ordenar variações totais do maior para o menor, selecionar as 5 primeiras
+Top 20 Negativas: Ordenar variações totais do menor para o maior, selecionar as 20 primeiras
+Análise dos 50 Maiores Contribuintes
+
+Ordenar contribuintes pela média dos valores não zerados de 2018 a 2023
+Selecionar os 50 primeiros
+Para cada um, calcular:
+Variação total
+Índice de volatilidade
+Tendência
+Observações Importantes:
+
+Todos os cálculos percentuais serão arredondados para duas casas decimais.
+Valores monetários serão apresentados no formato R$ #.###.###,##
+Contribuintes com valor zero em um ano específico serão excluídos do cálculo de variação para aquele ano, mas incluídos nos outros anos se tiverem valores.
+A análise considera apenas contribuintes com valor acima da média do município, calculada conforme item 2.
