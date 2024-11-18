@@ -1,0 +1,1 @@
+# Especificações para geração do executável
